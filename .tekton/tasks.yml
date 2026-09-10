@@ -23,4 +23,4 @@ spec:
       script: |
         #!/usr/bin/env bash
         pip install nose
-        nosetests
+        python -c "import collections, collections.abc; collections.Callable = collections.abc.Callable; import nose; nose.run()"
